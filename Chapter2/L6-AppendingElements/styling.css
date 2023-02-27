@@ -1,6 +1,0 @@
-/*
-Universal selector: select all elements, apply styling rules to them (set the font of the whole page to Monaco)
- */
-* {
-    font-family: Monaco, monospace;
-}
