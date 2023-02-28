@@ -10,6 +10,7 @@
     </style>
 </head>
 <body>
+      <h1>Switch flipper</h1>
       <button id = "switch">Flip the switch!</button>
       <p id = "lightText">is the light on?</p>
       <button id = "checkButton">check if the light is on</button>
@@ -36,11 +37,18 @@
           //set the initial value of lightOn
           var lightOn = false;
           switchButton.onclick = switchLight;
+          checkButton.onclick = checkLight;
           function switchLight() {
               //switch lightOn to the opposite of lightOn
               lightOn = !lightOn;
           }
-          //code here
+          /**
+           * TODO: if lightOn is true, set the innerText of lightText to "the light is on."
+           * if lightOn is false, set the innerText of lightText to "the light is off."
+           */
+          function checkLight(){
+
+          }
 
       </script>
 </body>

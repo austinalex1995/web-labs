@@ -20,10 +20,14 @@ button.addEventListener("click", getFact);
  * You should always understand the format of the required request/response JSON before you attempt to
  * interact with an API in your code.
  *
- * TODO: working off of the provided code, display a random fact from the cat fact API on your site.
+ * TODO: working off of the provided code, display a random fact from the cat fact API on your site by setting the
+ * innerText of 'content' to the 'fact' property of the responseObject
  */
 async function getFact(){
+    //await for the promise containing the HTTP response to resolve
     let HTTPResponse = await fetch("https://catfact.ninja/fact");
+    //json comes as an incoming stream and can't always be resolved immediately, so it must also be awaited
     let responseObject = await HTTPResponse.json();
+    //logging the http response to the console
     console.log(responseObject);
 }
