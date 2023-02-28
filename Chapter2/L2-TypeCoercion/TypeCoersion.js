@@ -8,6 +8,11 @@
  * This lab will show off the difference between == and ===. == is an equality comparison that allows for type coercion.
  * === is an equality comparison that will not allow for type coercion, so equivalent pieces of data that have different
  * datatypes will not be considered equal. Check out the two functions below.
+ *
+ * More info on type coersion here:
+ * https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion
+ * More info on equality comparisons here:
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness
  */
 let a1 = document.getElementById("a1");
 let a2 = document.getElementById("a2");
@@ -46,13 +51,3 @@ function doubleEquals(a, b){
 function tripleEquals(a, b){
 //    code here
 }
-/**
- * Did you notice that the variables at the top of the script were declared with 'let' instead of 'var'? That's
- * because JS actually has 3 ways to declare variables: var, let, const. Var doesn't have block scoping - meaning, when
- * a 'var' variable is declared within an if statement or for loop, it's actually accessible outside of its code block.
- * This was fixed in version JavaScript version ES6, when 'let' was introduced, which features block scoping. 'const'
- * is for unchangeable variables.
- *
- * We're going to be using 'let' from now on. 'var' is only relevant for very old browsers which are running old
- * versions of JavaScript.
- */

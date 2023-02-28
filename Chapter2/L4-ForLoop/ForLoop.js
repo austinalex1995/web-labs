@@ -14,6 +14,9 @@ button.onclick = getSum;
  *
  * the line val = parseInt(input.value) is provided, because otherwise JavaScript will parse the input value as a
  * String rather than Number. the rest is up to you.
+ *
+ * You can read more about for loops here:
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
  */
 function getSum(){
     let val = parseInt(input.value);
