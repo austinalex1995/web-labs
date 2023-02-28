@@ -1,3 +1,11 @@
+/**
+ * Arrays are not of a fixed length in JavaScript - you can access and set values using the [] operators like
+ * you may be used to, but now you can also add and remove elements from arrays using push and pop methods.
+ *
+ * Array-specific methods such as map, filter, reduce, and foreach also see a lot of use in JavaScript, and will
+ * also become increasingly important in the JavaScript frameworks you'll be learning later. Those will be discussed
+ * in a future activity.
+ */
 let content = document.getElementById("content");
 let input = document.getElementById("input");
 let pushButton = document.getElementById("pushButton");

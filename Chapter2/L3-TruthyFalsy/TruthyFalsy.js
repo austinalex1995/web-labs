@@ -1,6 +1,9 @@
 /**
  * This lab will demonstrate the use of truthy & falsy values.
  * check out the function & documentation below.
+ *
+ * More info on truthy & falsy here:
+ * https://developer.mozilla.org/en-US/docs/Glossary/Truthy
  */
 
 let r1 = document.getElementById("r1");
