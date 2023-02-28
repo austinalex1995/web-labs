@@ -23,14 +23,7 @@ button.addEventListener("click", getFact);
  * TODO: working off of the provided code, display a random fact from the cat fact API on your site.
  */
 async function getFact(){
-    let HTTPResponse = await fetchFact();
+    let HTTPResponse = await fetch("https://catfact.ninja/fact");
     let responseObject = await HTTPResponse.json();
     console.log(responseObject);
-}
-
-/**
- * This function will leverage the fetch API to return a Promise containing an HTTP response from the catfact API.
- */
-function fetchFact(){
-    return fetch("https://catfact.ninja/fact");
 }

@@ -9,3 +9,11 @@ Universal selector: select all elements, apply styling rules to them (set the fo
 * {
     font-family: Monaco, monospace;
 }
+/*
+Element selector: select all elements of a certain type, apply styling rules to them (keep images from being too big
+for your screen)
+ */
+img {
+    max-width:20%;
+    height:auto;
+}
