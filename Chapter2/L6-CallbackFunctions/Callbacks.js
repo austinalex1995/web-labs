@@ -18,7 +18,7 @@ arrForEach(originalArray);
 /**
  * TODO: return the result of the arr.filter method when using the containsSpace as a callback function.
  * This should return an array of only items of arr that do not contain a space.
- * I'll provide this first one to you: return arr.filter(filterContainsSpace);
+ * I'll provide this first one to you: return arr.filter(containsSpace);
  */
 function arrFilter(arr){
 //    code here

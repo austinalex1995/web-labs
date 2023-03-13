@@ -19,7 +19,7 @@ pushButton.onclick = updatePush;
 popButton.onclick = updatePop;
 
 /**
- * grab the input value, have the arrPush function push the value to arr, and update the site
+ * on button click, grab the input value, have the arrPush function push the value to arr, and update the site
  * no need to change this function
  */
 function updatePush(){
@@ -28,7 +28,7 @@ function updatePush(){
     length.innerText=arrLength();
 }
 /**
- * have the arrPush function pop a value from arr, and update the site
+ * on button click, have the arrPush function pop a value from arr, and update the site
  * no need to change this function
  */
 function updatePop(){
@@ -41,17 +41,14 @@ function updatePop(){
  * @param item a new value
  */
 function arrPush(item){
-    arr.push(item);
 }
 /**
  * TODO: pop a value from the arr array.
  */
 function arrPop(){
-    arr.pop();
 }
 /**
  * TODO: return the length of arr
  */
 function arrLength(){
-    return arr.length;
 }
