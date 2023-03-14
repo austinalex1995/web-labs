@@ -30,6 +30,17 @@
          * TODO: write the full code needed to conduct a login which is successful only when the username is "user"
          * and the password is "password".
          */
-    //    code here, inside the script tag
+        var message = document.getElementById("loginMessage");
+        var usernameInput = document.getElementById("usernameInput");
+        var passwordInput = document.getElementById("passwordInput");
+        var loginButton = document.getElementById("loginButton");
+        loginButton.onclick = login;
+        function login() {
+            if (usernameInput.value == "user" && passwordInput.value == "password") {
+                message.innerText = "welcome, user!";
+            } else {
+                message.innerText = "login unsuccessful, please try again";
+            }
+        }
     </script>
 </body>

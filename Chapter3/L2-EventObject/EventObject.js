@@ -16,5 +16,6 @@ let content = document.getElementById("content");
  * that target property can simply be retrieved via eventObject.target, so when you click on something on the page,
  * some information about the clicked element will be displayed.
  */
-function updateContentWithEventObjectTarget(eventObject){
+function updateContentWithEventObjectTarget(eventObject) {
+    content.innerText = eventObject.target;
 }

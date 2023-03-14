@@ -28,6 +28,7 @@ async function getFact(){
     let HTTPResponse = await fetch("https://catfact.ninja/fact");
     //json comes as an incoming stream and can't always be resolved immediately, so it must also be awaited
     let responseObject = await HTTPResponse.json();
+    content.innerText = responseObject.fact;
     //logging the http response to the console
     console.log(responseObject);
 }

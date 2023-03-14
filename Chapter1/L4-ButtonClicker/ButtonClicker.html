@@ -39,7 +39,12 @@
         function button1clicked() {
             text1.innerText = "button 1 clicked"
         }
-        //    start coding here
+        var button2 = document.getElementById("button2");
+        var text2 = document.getElementById("text2");
+        button2.onclick = button2clicked;
+        function button2clicked() {
+            text2.innerText = "button 2 clicked"
+        }
     </script>
 </body>
 </html>

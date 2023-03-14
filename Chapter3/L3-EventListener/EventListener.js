@@ -24,11 +24,10 @@ reset.addEventListener("click", resetText);
  * updateTextOnButton2Click should fire.
  */
 
-//code here
-
-
-
-
+button1.addEventListener("click", updateTextOnButton1Click);
+button1.addEventListener("click", updateTextOnEitherButtonClick);
+button2.addEventListener("click", updateTextOnButton2Click);
+button2.addEventListener("click", updateTextOnEitherButtonClick);
 
 /**
  * When the reset button is clicked, reset the text fields to their original states.

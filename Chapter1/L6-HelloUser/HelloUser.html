@@ -30,6 +30,13 @@
          * with "hello, {name}", where {name} was retrieved from the current text in the input box. Remember that
          * Strings can be concatenated with the + symbol.
          */
+        var text1 = document.getElementById("text");
+        var input1 = document.getElementById("input");
+        var button1 = document.getElementById("submit");
+        button1.onclick = updatename;
+        function updatename() {
+            text1.innerText = "hello, " + input1.value;
+        }
     </script>
 </body>
 </html>

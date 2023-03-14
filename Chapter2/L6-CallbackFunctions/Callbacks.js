@@ -21,14 +21,14 @@ arrForEach(originalArray);
  * I'll provide this first one to you: return arr.filter(containsSpace);
  */
 function arrFilter(arr){
-//    code here
+    return arr.filter(word => word.containsSpace);
 }
 /**
  * TODO: return the result of the arr.map method when using the convertToUppercase as a callback function.
  * This should return an array of the items of arr, all converted to uppercase characters.
  */
 function arrMap(arr){
-//    code here
+    return arr.map(word => convertToUppercase(word));
 }
 /**
  * TODO: return the result of the arr.forEach method when using the filterContainsSpace as a callback function.
@@ -36,7 +36,7 @@ function arrMap(arr){
  * logged to the console. (this is the equivalent of System.out.println)
  */
 function arrForEach(arr){
-//    code here
+    return arr.forEach(word => consoleLogEachItem(word));
 }
 /**
  * function intended to be used as a callback in array.filter
